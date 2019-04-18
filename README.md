@@ -25,4 +25,4 @@ example: https://example.com/?q=
 
 ●	Url or IP address of the attacking machine for Slowris attack
 Example: 193.90.55.111 
-•	Find the data.txt if need you want to input more inputs append data file.
+●	Find the data.txt if need you want to input more inputs append data file.
