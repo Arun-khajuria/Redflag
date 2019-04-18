@@ -1,6 +1,10 @@
 # Red flag
 Project for DDOS, SQL injection version v.1
-
+Group : 2
+Name :Arun Khajuria
+      Iris Jangulli
+      Isaac Flores Osnaya
+ 
 DDos attack :
 Slowloris is a type of denial of service attack tool invented by Robert "RSnake" Hansen which allows a single machine to take down 
 another machine's web server with minimal bandwidth and side effects on unrelated services and ports.
