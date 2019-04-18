@@ -32,4 +32,4 @@ example: https://example.com/?q=
 ●	Url or IP address of the attacking machine for Slowris attack
 Example: 193.90.55.111 
 
-●	Find the data.txt if need you want to input more inputs append data file.
+●	loccate the data.txt location Redflag/UI/data.text. if need you want to input more malicious inputs append data file.
