@@ -6,12 +6,9 @@ import sys
 log_level = 2
 
 
-def log(text, level=1):
-
+def log_(ip, text, level=1):
     if log_level >= level:
         print(text)
-
-def log_(ip):
     list_of_sockets = []
 
     regular_headers = [

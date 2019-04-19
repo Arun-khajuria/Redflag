@@ -12,7 +12,6 @@ class myapp(QtWidgets.QMainWindow):
         self.button_cancel_2.clicked.connect(self.ddos_cancel)
         self.button_ok.clicked.connect(self.sql)
         self.button_cancel.clicked.connect(self.sql_cancel)
-        self.button_graph.clicked.connect(self.graph)
 
     def ddos_(self):  # calling the ddos funtion
 
@@ -20,9 +19,8 @@ class myapp(QtWidgets.QMainWindow):
 
         if url != "":
             import ddos
-            exe = ddos.log_(url)
+            exe = ddos.log_(url,url,level=1)
             exe.exec_()
-            self.output_screen.sys.stdout.show()
 
         else:
             QMessageBox.about(self, "Error", "Enter Url")
@@ -49,6 +47,7 @@ class myapp(QtWidgets.QMainWindow):
                 elif resp.status_code == 400:
                     print("you Might check %s %s" % (resp.url, resp.headers))
 
+
                 else:
                     print("trying man")
 
@@ -57,22 +56,6 @@ class myapp(QtWidgets.QMainWindow):
 
     def sql_cancel(self):
         quit()
-
-    def graph(self):
-        import pylab as plb
-        plb.figure(1)
-        file = open('C:\\project\\UI\\data.txt', 'r')  # reading the data from file
-        payload = file.read()
-        l = len(payload)
-        gaus_dist = plb.normal(-2, 2, size=l)
-
-        plb.hist(gaus_dist, normed=True, bins=24, color="red")
-
-        plb.title("Gaussian distribution/Histogram")
-        plb.xlabel("value")
-        plb.ylabel("frequency")
-        plb.grid(True)
-        plb.show()
 
 
 if __name__ == '__main__':  # calling the application to show
