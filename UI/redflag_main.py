@@ -19,10 +19,10 @@ class myapp(QtWidgets.QMainWindow):
         url = self.input_url_ddos.text()
 
         if url != "":
-            from UI import ddos
+            import ddos
             exe = ddos.log_(url)
-            #ddos.ip = text
             exe.exec_()
+            self.output_screen.sys.stdout.show()
 
         else:
             QMessageBox.about(self, "Error", "Enter Url")
@@ -51,7 +51,7 @@ class myapp(QtWidgets.QMainWindow):
 
                 else:
                     print("trying man")
-                return(x)
+
         else:
             QMessageBox.about(self, "Error", "Enter Url")
 
