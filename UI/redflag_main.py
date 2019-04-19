@@ -44,7 +44,8 @@ class myapp(QtWidgets.QMainWindow):
                 resp = req.request(method='get', url=text, params=y)
                 if resp.status_code == 200:
                     print("found it Url: %s" % resp.url)
-
+                elif resp.status_code == 400:
+                    print("you Might check %s %s" % (resp.url, resp.headers))
                     exit()
                 else:
                     print("trying man")
