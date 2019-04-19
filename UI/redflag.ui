@@ -245,16 +245,6 @@ p, li { white-space: pre-wrap; }
      <string>Output :</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="output_screen">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>300</y>
-      <width>711</width>
-      <height>271</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="button_graph">
     <property name="geometry">
      <rect>
@@ -272,6 +262,16 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string>Graph</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="output_screen">
+    <property name="geometry">
+     <rect>
+      <x>62</x>
+      <y>301</y>
+      <width>711</width>
+      <height>261</height>
+     </rect>
     </property>
    </widget>
   </widget>

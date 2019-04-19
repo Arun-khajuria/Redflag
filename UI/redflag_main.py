@@ -16,12 +16,12 @@ class myapp(QtWidgets.QMainWindow):
 
     def ddos_(self):  # calling the ddos funtion
 
-        text = self.input_url_ddos.text()
+        url = self.input_url_ddos.text()
 
-        if text != "":
-            import ddos
-            exe = ddos.log(text, level=1)
-            ddos.ip = text
+        if url != "":
+            from UI import ddos
+            exe = ddos.log_(url)
+            #ddos.ip = text
             exe.exec_()
 
         else:
@@ -42,13 +42,16 @@ class myapp(QtWidgets.QMainWindow):
             for x in range(l):  # attcking the address
                 y = payload[x]
                 resp = req.request(method='get', url=text, params=y)
+
                 if resp.status_code == 200:
                     print("found it Url: %s" % resp.url)
+
                 elif resp.status_code == 400:
                     print("you Might check %s %s" % (resp.url, resp.headers))
-                    exit()
+
                 else:
                     print("trying man")
+                return(x)
         else:
             QMessageBox.about(self, "Error", "Enter Url")
 
