@@ -19,13 +19,20 @@ This makes exploiting the SQL Injection vulnerability more difficult, but not im
 
 #Enviroment used: python 3.6, pyqt5
 IDE used: pycharm
+
 Download Python: https://www.python.org/downloads/
+
 Installation:
+
 pip install request
+
 pip install pyqt5
 
 
 # Usage:
+
+●	Run redflag_main.py
+
 ●	Url should have input query for SQL injection 
 example: https://example.com/?q=
 
@@ -33,3 +40,6 @@ example: https://example.com/?q=
 Example: 193.90.55.111 
 
 ●	locate the data.txt location Redflag/UI/data.text. if need you want to input more malicious inputs append data file.
+
+•	Note : if there is any error in script redflag_main.py access the attacking scripts in command prompt manually example : python sql.py.
+
