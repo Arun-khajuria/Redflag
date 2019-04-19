@@ -44,18 +44,7 @@ class myapp(QtWidgets.QMainWindow):
                 resp = req.request(method='get', url=text, params=y)
                 if resp.status_code == 200:
                     print("found it Url: %s" % resp.url)
-                    #import pylab as plb
-                    #plb.figure(1)
-                    #gaus_dist = plb.normal(-2,2, size=z)
 
-                    #plb.hist(gaus_dist, normed=True, bins=24, color="red")
-
-                    #plb.title("Gaussian distribution/Histogram")
-                    #plb.xlabel("value")
-                    #plb.ylabel("frequency")
-                    #plb.grid(True)
-                    #plb.pause(10)
-                    #plb.show()
                     exit()
                 else:
                     print("trying man")
