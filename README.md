@@ -19,9 +19,13 @@ This makes exploiting the SQL Injection vulnerability more difficult, but not im
 
 #Enviroment used: python 3.6, pyqt5
 IDE used: pycharm
+
 Download Python: https://www.python.org/downloads/
+
 Installation:
+
 pip install request
+
 pip install pyqt5
 
 
