@@ -41,5 +41,5 @@ Example: 193.90.55.111
 
 ●	locate the data.txt location Redflag/UI/data.text. if need you want to input more malicious inputs append data file.
 
-•	Note : if there is any error in script redflag_main.py access the attacking scripts in command prompt manually example : python sql.py.
+•	Note : if there is any error in script redflag_main.py access the attacking scripts individually prompt manually example : python sql.py.
 
